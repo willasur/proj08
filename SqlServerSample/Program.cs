@@ -123,6 +123,7 @@ namespace SqlServerSample
                         //RETRIEVE STARTS HERE
                         case "B":
                             Console.WriteLine("Retrieve All Employee Data");
+                            Console.WriteLine("Press Any Key To Proceed");
                             Console.ReadLine();
                             string retrieveQuery = "SELECT * FROM Employees";
                             SqlCommand retrieveQueryEmployee = new SqlCommand(retrieveQuery, sqlConnection);
@@ -136,6 +137,7 @@ namespace SqlServerSample
                                 Console.WriteLine(dataReader.GetValue(4).ToString());
                             }
                             Console.WriteLine("\n-- END --");
+                            Console.WriteLine("Press Any Key To Proceed");
                             Console.ReadLine();
                             sqlConnection.Close();
                             break;
